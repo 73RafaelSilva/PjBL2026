@@ -28,6 +28,8 @@ class Pessoa{
         System.out.println('interesses: ')
         verInteresses();
     }
-    //pendente: pesquisar padrão bilder para subir criaGrupo() de maneira sanitizada
+    Grupo criaGrupo(String nome){
+        return new Grupo(this, nome);
+    }
 
 }

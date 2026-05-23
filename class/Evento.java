@@ -1,4 +1,6 @@
 import java.time.LocalDate;
+import java.util.ArrayList;
+
 public class Evento {
 
     int id;
@@ -7,11 +9,13 @@ public class Evento {
     String data;
     String local;
 
+    ArrayList<Pessoa> participantes;
+
     public Evento() {
 
     }
 
-    public Evento(int id, String , String descricao, String data, String local) {
+    public Evento(int id, String nome, String descricao, String data, String local) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;

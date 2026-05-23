@@ -13,12 +13,4 @@ public class Grupo {
 
     private String nome;
 
-    Grupo(Pessoa pessoa, String nome){
-        this.pessoas = new ArrayList<Pessoa>();
-        this.pessoasAdm = new ArrayList<Pessoa>().add(pessoa);
-        this.interesses = new ArrayList<String>();
-        this.evento = new ArrayList<Evento>();
-        this.nome = nome;
-    }
-
 }
