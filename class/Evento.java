@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class Evento {
+public abstract class Evento {
 
     int id;
     String nome;
