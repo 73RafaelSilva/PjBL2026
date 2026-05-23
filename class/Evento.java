@@ -15,7 +15,7 @@ public class Evento {
 
     }
 
-    public Evento(int id, String , String descricao, String data, String local) {
+    public Evento(int id, String nome, String descricao, String data, String local) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
