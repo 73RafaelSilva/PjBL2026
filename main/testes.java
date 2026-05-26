@@ -23,7 +23,7 @@ public class Main{
 
         janela.add(painel);
         janela.setSize(300,150); 
-        janela.setVisible(b: true);
+        janela.setVisible(true);
 
 
         // Loop da Tela de Login
@@ -41,4 +41,4 @@ public class Main{
 
     }
 
-}
+} 
