@@ -43,7 +43,7 @@ public abstract class Evento {
         return this.local;
     }
 
-    public String MostrarEvento(){
+    public String mostrarEvento(){
         return "Evento: " + nome + " Data: " + data + " Local: " + local;
     }
 }

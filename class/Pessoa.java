@@ -28,6 +28,11 @@ class Pessoa{
         System.out.println('interesses: ')
         verInteresses();
     }
+
+    String getNome() {
+        return this.nome;
+    }
+
     Grupo criaGrupo(String nome){
         return new Grupo(this, nome);
     }
