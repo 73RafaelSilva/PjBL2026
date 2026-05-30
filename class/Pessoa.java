@@ -1,3 +1,5 @@
+package classes;
+
 import java.util.ArrayList;
 
 class Pessoa{
@@ -18,14 +20,14 @@ class Pessoa{
         this.interesses.remove(interesse);
     }
     void verInteresses(){
-        for (int i = 0; i < this.interesses.size; i += 1){
-            System.out.println('Interesse ' + (i + 1) + ': ' + this.interesses[i]);
+        for (int i = 0; i < this.interesses.size(); i += 1){
+            System.out.println("Interesse " + (i + 1) + ": " + this.interesses.get(i));
         }
     }
     void verPessoa(){
-        System.out.println('Nome: ')
-        System.out.println('idade: ')
-        System.out.println('interesses: ')
+        System.out.println("Nome: ");
+        System.out.println("idade: ");
+        System.out.println("interesses: ");
         verInteresses();
     }
 
