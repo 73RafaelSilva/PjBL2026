@@ -1,2 +1,2 @@
 javac main/Main.java
-java main/Main
+java main.Main
