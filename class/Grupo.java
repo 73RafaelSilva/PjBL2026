@@ -35,4 +35,23 @@ public class Grupo {
 
    }
 
+   void sair (Pessoa sair) {
+
+        this.pessoas.remove (sair);
+            System.out.println("saiu do grupo");
+   }
+
+   void promover (Pessoa promocao) {
+
+        this.pessoas.remove (promocao);
+        this.pessoasAdm.add (promocao);
+        System.out.println("Foi promovida a admin");
+   }
+
+   void revogar (Pessoa revogacao) {
+
+        this.pessoasAdm.remove (revogacao);
+        this.pessoas.add (revogacao);
+        System.out.println("Foi revogada de ser um admin");
+   }
 }
