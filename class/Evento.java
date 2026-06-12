@@ -1,9 +1,11 @@
 package classes;
 
-import java.time.LocalDate;
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public abstract class Evento {
+public abstract class Evento implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     int id;
     String nome;
@@ -14,7 +16,7 @@ public abstract class Evento {
     ArrayList<Pessoa> participantes;
 
     public Evento() {
-
+        participantes = new ArrayList<>();
     }
 
     public Evento(int id, String nome, String descricao, String data, String local) {
@@ -23,6 +25,7 @@ public abstract class Evento {
         this.descricao = descricao;
         this.data = data;
         this.local = local;
+        this.participantes = new ArrayList<>();
     }
 
     public int getId() {
@@ -45,7 +48,9 @@ public abstract class Evento {
         return this.local;
     }
 
-    public String mostrarEvento(){
-        return "Evento: " + nome + " Data: " + data + " Local: " + local;
+    public String mostrarEvento() {
+        return "Evento: " + nome +
+               " Data: " + data +
+               " Local: " + local;
     }
 }
