@@ -1,5 +1,10 @@
 package classes;
-public class EventoOnline extends Evento {
+
+import java.io.Serializable;
+
+public class EventoOnline extends Evento implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     String link;
 
@@ -17,9 +22,9 @@ public class EventoOnline extends Evento {
     }
 
     public String MostrarEventoOnline() {
-        return "Evento: " + nome + 
-               " Data: " + data + 
-               " Local: " + local + 
+        return "Evento: " + nome +
+               " Data: " + data +
+               " Local: " + local +
                " Link: " + link;
     }
 }
